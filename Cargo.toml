@@ -1,0 +1,15 @@
+[package]
+name = "highlight"
+version = "0.1.0"
+authors = ["Samuel Colvin <s@muelcolvin.com>"]
+edition = "2018"
+
+[dependencies]
+ansi_colours = "1.0.4"
+ansi_term = "0.12"
+syntect = "4.6.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
